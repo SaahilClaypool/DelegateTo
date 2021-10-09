@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <LangVersion>preview</LangVersion>
+    <LangVersion>10.0</LangVersion>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <PackageId>DelegateTo.SourceGenerator</PackageId>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
