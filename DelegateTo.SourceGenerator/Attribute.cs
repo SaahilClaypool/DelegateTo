@@ -8,14 +8,14 @@ namespace DelegateTo.SourceGenerator
 {
     public class AttributeGenerator
     {
-        public const string Name = "SourceGenerator";
+        public const string Name = "GenerateDelegate";
         public const string Namespace = "DelegateTo.SourceGenerator";
         private static bool HasGenerated = false;
 
         private static readonly string _attributeText = $@"using System;
         namespace {Namespace}
         {{
-            [AttributeUsage(AttributeTargets.Class | AttributeTargets.Enum, Inherited = false, AllowMultiple = false)]
+            [AttributeUsage(AttributeTargets.Property, Inherited = false, AllowMultiple = false)]
             public sealed class {Name} : Attribute
             {{
             }}
