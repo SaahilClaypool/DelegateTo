@@ -50,7 +50,7 @@ partial class Student
 {
     public int Year { get; set; }
 
-    [DelegateTo]
+    [GenerateDelegate] // signal source generator to create delegate functions
     Person Person { get; set; }
 }
 
