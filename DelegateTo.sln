@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DelegateTo.SourceGenerator"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DelegateTo.Test", "DelegateTo.Test\DelegateTo.Test.csproj", "{BB7F7A5A-3CF6-4B81-AC3B-66CB45798069}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DelegateTo.Runtime", "DelegateTo.Runtime\DelegateTo.Runtime.csproj", "{FEC3C27A-620D-430D-B6BB-9CE89FE77488}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -56,5 +58,17 @@ Global
 		{D7188A53-9F93-4495-BF03-6C590C0C16FB}.Release|x64.Build.0 = Release|Any CPU
 		{D7188A53-9F93-4495-BF03-6C590C0C16FB}.Release|x86.ActiveCfg = Release|Any CPU
 		{D7188A53-9F93-4495-BF03-6C590C0C16FB}.Release|x86.Build.0 = Release|Any CPU
+		{FEC3C27A-620D-430D-B6BB-9CE89FE77488}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEC3C27A-620D-430D-B6BB-9CE89FE77488}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEC3C27A-620D-430D-B6BB-9CE89FE77488}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{FEC3C27A-620D-430D-B6BB-9CE89FE77488}.Debug|x64.Build.0 = Debug|Any CPU
+		{FEC3C27A-620D-430D-B6BB-9CE89FE77488}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{FEC3C27A-620D-430D-B6BB-9CE89FE77488}.Debug|x86.Build.0 = Debug|Any CPU
+		{FEC3C27A-620D-430D-B6BB-9CE89FE77488}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEC3C27A-620D-430D-B6BB-9CE89FE77488}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FEC3C27A-620D-430D-B6BB-9CE89FE77488}.Release|x64.ActiveCfg = Release|Any CPU
+		{FEC3C27A-620D-430D-B6BB-9CE89FE77488}.Release|x64.Build.0 = Release|Any CPU
+		{FEC3C27A-620D-430D-B6BB-9CE89FE77488}.Release|x86.ActiveCfg = Release|Any CPU
+		{FEC3C27A-620D-430D-B6BB-9CE89FE77488}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

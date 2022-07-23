@@ -25,6 +25,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\DelegateTo.Runtime\DelegateTo.Runtime.csproj" />
+    <!-- Package the generator in the analyzer directory of the nuget package -->
+    <None Include="$(OutputPath)\$(AssemblyName).dll" Pack="true" PackagePath="analyzers/dotnet/cs" Visible="false" />
   </ItemGroup>
 
 </Project>

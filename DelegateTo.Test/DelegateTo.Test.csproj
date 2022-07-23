@@ -23,6 +23,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DelegateTo.SourceGenerator\DelegateTo.SourceGenerator.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false" />
+    <ProjectReference Include="..\DelegateTo.Runtime\DelegateTo.Runtime.csproj" />
   </ItemGroup>
 
 </Project>
