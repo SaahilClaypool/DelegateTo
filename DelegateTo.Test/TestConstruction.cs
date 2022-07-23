@@ -1,6 +1,7 @@
 using System;
 using Xunit;
-using DelegateTo.SourceGenerator;
+using DelegateTo.Test;
+using DelegateTo;
 
 namespace DelegateTo.Test;
 public class TestConstruction
@@ -19,6 +20,18 @@ partial class Parent
 {
     [GenerateDelegate]
     public Child Child { get; set; }
+
+    [GenerateDelegate]
+    public Child2 Child2 { get; set; }
+}
+
+public partial class Parent2
+{
+    [GenerateDelegate]
+    public Child Child { get; set; }
+
+    [GenerateDelegate]
+    public Child2 Child2 { get; set; }
 }
 
 public class Child
@@ -28,4 +41,12 @@ public class Child
     private int Z { get; set; }
 
     public int A() => 1;
+}
+
+
+public class Child2
+{
+    public int R { get; set; }
+    public int Q { get; }
+    private int Y { get; set; }
 }

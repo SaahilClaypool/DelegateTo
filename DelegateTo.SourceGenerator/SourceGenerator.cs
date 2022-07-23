@@ -8,8 +8,18 @@ public class SourceGenerator : ISourceGenerator
         // retrieve the populated receiver
         if (context.SyntaxContextReceiver is not SyntaxReceiver receiver)
             return;
-        AttributeGenerator.Generate(context);
         var compilation = context.Compilation;
+
+        context.AddSource("DelegateAttribute", @"
+using System;
+
+namespace DelegateTo;
+
+[AttributeUsage(AttributeTargets.Property, Inherited = false, AllowMultiple = false)]
+public sealed class GenerateDelegateAttribute : Attribute
+{
+    public string Prefix { get; set; } = string.Empty;
+}");
 
         var fieldsByClass = receiver
             .Fields
@@ -34,7 +44,7 @@ namespace {container.ContainingNamespace.ToDisplayString()}
 {{
     {access} partial class {container.Name} {interfaces}
     {{
-        {string.Join("\name", delegates)}
+        {string.Join("\n", delegates)}
     }}
 }}
 ";

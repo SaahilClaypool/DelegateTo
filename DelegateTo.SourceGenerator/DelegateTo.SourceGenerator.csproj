@@ -7,7 +7,7 @@
     <PackageId>DelegateTo.SourceGenerator</PackageId>
     <IncludeBuildOutput>false</IncludeBuildOutput>
     <Nullable>enable</Nullable>
-    <Version>0.0.2</Version>
+    <Version>0.0.3</Version>
     <Authors>Saahil Claypool</Authors>
     <Company>Personal</Company>
     <PackageReadmeFile>README.md</PackageReadmeFile>
@@ -21,6 +21,10 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="3.9.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DelegateTo.Runtime\DelegateTo.Runtime.csproj" />
   </ItemGroup>
 
 </Project>
