@@ -7,7 +7,7 @@
     <PackageId>DelegateTo.SourceGenerator</PackageId>
     <IncludeBuildOutput>false</IncludeBuildOutput>
     <Nullable>enable</Nullable>
-    <Version>0.0.3</Version>
+    <Version>0.0.4</Version>
     <Authors>Saahil Claypool</Authors>
     <Company>Personal</Company>
     <PackageReadmeFile>README.md</PackageReadmeFile>
