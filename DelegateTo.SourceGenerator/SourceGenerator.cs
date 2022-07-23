@@ -11,7 +11,8 @@ public class SourceGenerator : ISourceGenerator
         AttributeGenerator.Generate(context);
         var compilation = context.Compilation;
 
-        var fieldsByClass = receiver.Fields
+        var fieldsByClass = receiver
+            .Fields
             .GroupBy(f => f.ContainingType.ToDisplayString())
             .ToDictionary(f => f.Key);
 
@@ -100,8 +101,8 @@ class SyntaxReceiver : ISyntaxContextReceiver
         if (context.Node is PropertyDeclarationSyntax propertyDeclarationSyntax
             && propertyDeclarationSyntax.AttributeLists.Count > 0)
         {
-            var symbol = context.SemanticModel.GetDeclaredSymbol(propertyDeclarationSyntax) as IPropertySymbol;
-            if (symbol.GetAttributes().Any(ad => ad.AttributeClass.ToDisplayString().Contains("GenerateDelegate")))
+            var symbol = context.SemanticModel.GetDeclaredSymbol(propertyDeclarationSyntax);
+            if (symbol!.GetAttributes().Any(ad => ad.AttributeClass!.ToDisplayString().Contains("GenerateDelegate")))
             {
                 Fields.Add(symbol);
             }

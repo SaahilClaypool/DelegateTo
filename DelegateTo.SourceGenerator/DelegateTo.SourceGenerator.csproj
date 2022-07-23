@@ -5,13 +5,19 @@
     <LangVersion>10.0</LangVersion>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <PackageId>DelegateTo.SourceGenerator</PackageId>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <IncludeBuildOutput>false</IncludeBuildOutput>
+    <Nullable>enable</Nullable>
+    <Version>0.0.2</Version>
+    <Authors>Saahil Claypool</Authors>
+    <Company>Personal</Company>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/SaahilClaypool/DelegateTo</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="..\README.md" Pack="true" PackagePath="\" />
     <PackageReference Include="Microsoft.CodeAnalysis.Analyzers" Version="3.3.2">
-        <PrivateAssets>all</PrivateAssets>
+      <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="3.9.0" />

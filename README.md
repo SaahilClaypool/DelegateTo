@@ -1,5 +1,8 @@
 # Delegate To
 
+- [Nuget](https://www.nuget.org/packages/DelegateTo.SourceGenerator/)
+- [GitHub](https://github.com/SaahilClaypool/DelegateTo)
+
 Inheritance is often used to share code, but this can lead to unintended complexity.
 One way around this is to favor composition over inheritance.
 
