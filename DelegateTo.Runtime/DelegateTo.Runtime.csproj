@@ -2,7 +2,6 @@
 
   <PropertyGroup>
       <TargetFramework>netstandard2.0</TargetFramework>
-      <RootNamespace>Generator.Equals</RootNamespace>
       <IsPackable>true</IsPackable>
       <LangVersion>10.0</LangVersion>
   </PropertyGroup>
